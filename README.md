@@ -41,7 +41,7 @@ Peer-to-peer (P2P) lending provides borrowers with relatively low borrowing inte
            rfecv.grid_scores_)
   plt.show()
   ```
-* 資料轉換(解決資料不平衡問題)
+* 資料轉換 (解決資料不平衡問題)
   * SMOTE
   * Borderline SMOTE
    ```py
