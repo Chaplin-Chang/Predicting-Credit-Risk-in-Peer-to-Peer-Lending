@@ -89,8 +89,8 @@ Peer-to-peer (P2P) lending provides borrowers with relatively low borrowing inte
   test_Y = test_Y[100000:]
   ```
 * 測試 / 查看訓練結果
-  #Showing testing scores
    ```py
+  #Showing testing scores
   print('Accuracy:', metrics.accuracy_score(test_Y, pred))
   print('Recall:', metrics.recall_score(test_Y, pred))
   print('fbeta:', metrics.fbeta_score(test_Y, pred, beta=1.5))
