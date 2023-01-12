@@ -24,8 +24,8 @@ Peer-to-peer (P2P) lending provides borrowers with relatively low borrowing inte
    ```py
   min_features_to_select = 1  # Minimum number of features to consider
   rfecv = RFECV(estimator=XGBClassifier(), step=1, cv=StratifiedKFold(2),
-              scoring=metrics.make_scorer(f1_score, average='weighted'),
-              min_features_to_select=min_features_to_select)
+                scoring=metrics.make_scorer(f1_score, average='weighted'),
+                min_features_to_select=min_features_to_select)
   rfecv.fit(X, Y)
 
   print("Optimal number of features : %d" % rfecv.n_features_)
@@ -37,8 +37,8 @@ Peer-to-peer (P2P) lending provides borrowers with relatively low borrowing inte
   plt.xlabel("Number of features selected")
   plt.ylabel("Cross validation score (nb of correct classifications)")
   plt.plot(range(min_features_to_select,
-               len(rfecv.grid_scores_) + min_features_to_select),
-         rfecv.grid_scores_)
+           len(rfecv.grid_scores_) + min_features_to_select),
+           rfecv.grid_scores_)
   plt.show()
   ```
 * 資料轉換(解決資料不平衡問題)
